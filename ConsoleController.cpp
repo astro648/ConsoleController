@@ -15,6 +15,7 @@ int main(){
 	string input1sub1;
 	string sysshutdownyn;
 	string sysrestartyn;
+	string websitelinkinput;
 	for( ; ; ){
 		cout<<">> ";
 		cin>>input1;
@@ -144,7 +145,7 @@ int main(){
 				cout<<"Custom time shut-down command aborted."<<endl;
     		}
 		}
-		else if(input1=="sys-clock-date-time.show"){
+		else if(input1=="clock-date-time.show"){
 			time_t timetoday;
    			time (&timetoday);
    			cout<<"Calendar date and time is: "<< asctime(localtime(&timetoday));
@@ -152,13 +153,71 @@ int main(){
 		else if(input1=="console.close"){
 			break;
 		}
-		else if(input1=="console.github-repo.open"){
+		else if(input1=="github-repo.open"){
 			HWND hWnd = GetConsoleWindow();
 			ShowWindow( hWnd, SW_HIDE );
 			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController"), TEXT(""),NULL,SW_HIDE);
+			break;
+			exit(0);
+		}
+		else if(input1=="github-repo.wiki.open"){
+			HWND hWnd = GetConsoleWindow();
+			ShowWindow( hWnd, SW_HIDE );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/wiki"), TEXT(""),NULL,SW_HIDE);
+			break;
+			exit(0);
+		}
+		else if(input1=="github-repo.projects.open"){
+			HWND hWnd = GetConsoleWindow();
+			ShowWindow( hWnd, SW_HIDE );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/projects"), TEXT(""),NULL,SW_HIDE);
+			break;
+			exit(0);
+		}
+		else if(input1=="github-repo.issues.open"){
+			HWND hWnd = GetConsoleWindow();
+			ShowWindow( hWnd, SW_HIDE );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/issues"), TEXT(""),NULL,SW_HIDE);
+			break;
+			exit(0);
+		}
+		else if(input1=="console.help"){
+			HWND hWnd = GetConsoleWindow();
+			ShowWindow( hWnd, SW_HIDE );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/wiki"), TEXT(""),NULL,SW_HIDE);
+			break;
+			exit(0);
+		}
+		else if(input1=="suicidal.help"){
+			HWND hWnd = GetConsoleWindow();
+			ShowWindow( hWnd, SW_HIDE );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://samaritanshope.org/"), TEXT(""),NULL,SW_HIDE);
+			break;
+			exit(0);
+		}
+		else if(input1=="suicide.help"){
+			HWND hWnd = GetConsoleWindow();
+			ShowWindow( hWnd, SW_HIDE );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://samaritanshope.org/"), TEXT(""),NULL,SW_HIDE);
+			break;
+			exit(0);
+		}
+		else if(input1=="suicidal-thoughts.help"){
+			HWND hWnd = GetConsoleWindow();
+			ShowWindow( hWnd, SW_HIDE );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://samaritanshope.org/"), TEXT(""),NULL,SW_HIDE);
+			break;
+			exit(0);
+		}
+		else if(input1=="commands.list"){
+			HWND hWnd = GetConsoleWindow();
+			ShowWindow( hWnd, SW_HIDE );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/wiki/Full-Command-List"), TEXT(""),NULL,SW_HIDE);
+			break;
+			exit(0);
 		}
 		else{
-			cout<<"Command not recognised."<<endl;
+			cout<<"The command you entered was not recognized. If you would like to, you can try again."<<endl;
 		}
 	}
 }
