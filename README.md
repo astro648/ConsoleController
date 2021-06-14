@@ -7,13 +7,5 @@ Once I implement all the main commands, it will have different uses like shutdow
 NO data is being collected from you by me if you use this software.
 ## Is this under active development?
 Yes, this is under active development.
-## When can we see the full release?
-I don't know, but I am working very hard to release it as soon as possible but it won't be soon. For now, you can still test out the alpha software but it doesn't have all parts to it.
-## After the full release, will development continue?
-Yes, development will continue after the first full release.
-## Where can we see a list of commands?
-You can see it in the wiki, but it may be out of date and/or some may be missing.
-## Who works on this?
-I (astronomerayaan) and the current and only contributor to this project.
 ## Where can I find more info?
-The wiki should have more information in the future.
+The wiki has more info.
