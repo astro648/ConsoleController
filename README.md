@@ -1,4 +1,4 @@
-# ConsoleController v0.1.1-alpha
+# ConsoleController v0.2
 ## What is this?
 This is a Console Controller which will have a lot of different commands for you to use in different places around your computer and life.
 ## Why is this useful?
