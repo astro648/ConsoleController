@@ -14,6 +14,6 @@ Yes, development will continue after the first full release.
 ## Where can we see a list of commands?
 You can see it in the wiki, but it may be out of date and/or some may be missing.
 ## Who works on this?
-I (astronautayaan) and the current and only contributor to this project.
+I (astronomerayaan) and the current and only contributor to this project.
 ## Where can I find more info?
 The wiki should have more information in the future.
