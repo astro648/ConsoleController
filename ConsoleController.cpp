@@ -38,6 +38,25 @@ int main(){
 				system("control.exe");
 				cout<<"Control Panel has been opened."<<endl;
 			}
+			else if(input1sub1=="msconfig"){
+				system("msconfig.exe");
+				cout<<"System Configuration has been opened."<<endl;
+			}
+			else if(input1sub1=="resmon"){
+				system("resmon.exe");
+				cout<<"Resource Monitor has been opened."<<endl;
+			}
+			else if(input1sub1=="msinfo32"){
+				system("msinfo32.exe");
+				cout<<"System Information has been opened."<<endl;
+			}
+			else if(input1sub1=="run-exe"){
+				system("run.exe");
+				cout<<"Run has been opened."<<endl;
+			}
+			else{
+				cout<<"The application name abbreviation you entered was not recognized. If you would like to, you can try again."<<endl;
+			}
 		}
 		else if(input1=="sys.shutdown.30s"){
 			cout<<"Are you sure you want to shut down? [y/n]: ";
@@ -145,6 +164,9 @@ int main(){
 				cout<<"Custom time shut-down command aborted."<<endl;
     		}
 		}
+		else if(input1=="easteregg"){
+			cout<<"Hello there, this is Easter Egg, a decoy for the real easter eggs hidden in this app. good luck finding the real easter eggs"<<endl;
+		}
 		else if(input1=="clock-date-time.show"){
 			time_t timetoday;
    			time (&timetoday);
@@ -159,6 +181,27 @@ int main(){
 			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController"), TEXT(""),NULL,SW_HIDE);
 			break;
 			exit(0);
+		}
+		else if(input1=="chrome://dino"){
+			cout<<"Remember to do it in Chrome next time but here's something for you since you found an easter egg..."<<endl;
+			cout<<"                                ############# "<<endl;
+			cout<<"        #                      ######## ######"<<endl;
+			cout<<"        ###                    ###############"<<endl;
+			cout<<"         ###                   ######         "<<endl;
+			cout<<"          ###                   ##############"<<endl;
+			cout<<"            ######################            "<<endl;
+			cout<<"           ########################           "<<endl;
+			cout<<"           ########################           "<<endl;
+			cout<<"            #######################            "<<endl;
+			cout<<"               ################# #####        "<<endl;
+			cout<<"                ####    ####       #          "<<endl;
+			cout<<"                ####    ####                  "<<endl;
+			cout<<"                ####    ####                  "<<endl;
+			cout<<"                ####    ####                  "<<endl;
+			cout<<"                ####    ####                  "<<endl;
+			cout<<"               ####### #######                "<<endl;
+			cout<<"                #####   #####                "<<endl;
+			
 		}
 		else if(input1=="github-repo.wiki.open"){
 			HWND hWnd = GetConsoleWindow();
