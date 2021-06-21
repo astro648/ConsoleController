@@ -259,6 +259,9 @@ int main(){
 			break;
 			exit(0);
 		}
+		else if(input1=="undo.nedry.sabotage"){
+			cout<<"Ah ah ah! You didn't say the magic word!"<<endl;
+		}
 		else{
 			cout<<"The command you entered was not recognized. If you would like to, you can try again."<<endl;
 		}
