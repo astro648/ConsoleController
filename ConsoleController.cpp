@@ -16,6 +16,7 @@ int main(){
 	string sysshutdownyn;
 	string sysrestartyn;
 	string websitelinkinput;
+	string searchengineopeninput;
 	for( ; ; ){
 		cout<<">> ";
 		cin>>input1;
@@ -261,6 +262,53 @@ int main(){
 		}
 		else if(input1=="undo.nedry.sabotage"){
 			cout<<"Ah ah ah! You didn't say the magic word!"<<endl;
+		}
+		else if(input1=="search-engine.open"){
+			cout<<"[Type 'n' or 'N' without the quotation marks to cancel] search-engine.open >> ";
+			cin>>searchengineopeninput;
+			if(searchengineopeninput=="n"){
+				cout<<"Command canceled."<<endl;
+			}
+			else if(searchengineopeninput=="N"){
+				cout<<"Command canceled."<<endl;
+			}
+			else{
+				if(searchengineopeninput=="google.open"){
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow( hWnd, SW_HIDE );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://google.com/"), TEXT(""),NULL,SW_HIDE);
+					break;
+					exit(0);
+				}
+				else if(searchengineopeninput=="bing.open"){
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow( hWnd, SW_HIDE );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://bing.com/"), TEXT(""),NULL,SW_HIDE);
+					break;
+					exit(0);
+				}
+				else if(searchengineopeninput=="yahoo.open"){
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow( hWnd, SW_HIDE );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://www.yahoo.com/"), TEXT(""),NULL,SW_HIDE);
+					break;
+					exit(0);
+				}
+				else if(searchengineopeninput=="baidu.open"){
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow( hWnd, SW_HIDE );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://www.baidu.com/"), TEXT(""),NULL,SW_HIDE);
+					break;
+					exit(0);
+				}
+				else if(searchengineopeninput=="yandex.open"){
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow( hWnd, SW_HIDE );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://yandex.ru/"), TEXT(""),NULL,SW_HIDE);
+					break;
+					exit(0);
+				}
+			}
 		}
 		else{
 			cout<<"The command you entered was not recognized. If you would like to, you can try again."<<endl;
