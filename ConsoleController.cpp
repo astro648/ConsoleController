@@ -308,6 +308,48 @@ int main(){
 					break;
 					exit(0);
 				}
+				else if(searchengineopeninput=="duckduckgo.open"){
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow( hWnd, SW_HIDE );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://duckduckgo.com/"), TEXT(""),NULL,SW_HIDE);
+					break;
+					exit(0);
+				}
+				else if(searchengineopeninput=="askjeeves.open"){
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow( hWnd, SW_HIDE );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://www.ask.com/"), TEXT(""),NULL,SW_HIDE);
+					break;
+					exit(0);
+				}
+				else if(searchengineopeninput=="ask.open"){
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow( hWnd, SW_HIDE );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://www.ask.com/"), TEXT(""),NULL,SW_HIDE);
+					break;
+					exit(0);
+				}
+				else if(searchengineopeninput=="ecosia.open"){
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow( hWnd, SW_HIDE );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://www.ecosia.org/"), TEXT(""),NULL,SW_HIDE);
+					break;
+					exit(0);
+				}
+				else if(searchengineopeninput=="aol.open"){
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow( hWnd, SW_HIDE );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://www.aol.com/"), TEXT(""),NULL,SW_HIDE);
+					break;
+					exit(0);
+				}
+				else if(searchengineopeninput=="archiveorg.open"){
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow( hWnd, SW_HIDE );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://archive.org/"), TEXT(""),NULL,SW_HIDE);
+					break;
+					exit(0);
+				}
 			}
 		}
 		else if(input1=="crash"){
