@@ -11,7 +11,7 @@
 #include <windows.h>
 using namespace std;
 int main(){
-	cout<<"ConsoleController v0.7.2 - Type in your command to get started."<<endl;
+	cout<<"ConsoleController v0.7.3 - Type in your command to get started."<<endl;
 	string input1;
 	string input1sub1;
 	string sysshutdownyn;
@@ -178,14 +178,14 @@ int main(){
    			cout<<"Calendar date and time is: "<< asctime(localtime(&timetoday));
 		}
 		else if(input1=="console.close"){
-			break;
+			abort();
 		}
 		else if(input1=="github-repo.open"){
 			HWND hWnd = GetConsoleWindow();
 			ShowWindow( hWnd, SW_HIDE );
 			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController"), TEXT(""),NULL,SW_HIDE);
-			break;
-			exit(0);
+			abort();
+			
 		}
 		else if(input1=="chrome://dino"){
 			cout<<"Remember to do it in Chrome next time but here's something for you since you found an easter egg..."<<endl;
@@ -212,57 +212,57 @@ int main(){
 			HWND hWnd = GetConsoleWindow();
 			ShowWindow( hWnd, SW_HIDE );
 			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/wiki"), TEXT(""),NULL,SW_HIDE);
-			break;
-			exit(0);
+			abort();
+			
 		}
 		else if(input1=="github-repo.projects.open"){
 			HWND hWnd = GetConsoleWindow();
 			ShowWindow( hWnd, SW_HIDE );
 			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/projects"), TEXT(""),NULL,SW_HIDE);
-			break;
-			exit(0);
+			abort();
+			
 		}
 		else if(input1=="github-repo.issues.open"){
 			HWND hWnd = GetConsoleWindow();
 			ShowWindow( hWnd, SW_HIDE );
 			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/issues"), TEXT(""),NULL,SW_HIDE);
-			break;
-			exit(0);
+			abort();
+			
 		}
 		else if(input1=="console.help"){
 			HWND hWnd = GetConsoleWindow();
 			ShowWindow( hWnd, SW_HIDE );
 			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/wiki"), TEXT(""),NULL,SW_HIDE);
-			break;
-			exit(0);
+			abort();
+			
 		}
 		else if(input1=="suicidal.help"){
 			HWND hWnd = GetConsoleWindow();
 			ShowWindow( hWnd, SW_HIDE );
 			ShellExecute(NULL,TEXT("open"), TEXT("https://samaritanshope.org/"), TEXT(""),NULL,SW_HIDE);
-			break;
-			exit(0);
+			abort();
+			
 		}
 		else if(input1=="suicide.help"){
 			HWND hWnd = GetConsoleWindow();
 			ShowWindow( hWnd, SW_HIDE );
 			ShellExecute(NULL,TEXT("open"), TEXT("https://samaritanshope.org/"), TEXT(""),NULL,SW_HIDE);
-			break;
-			exit(0);
+			abort();
+			
 		}
 		else if(input1=="suicidal-thoughts.help"){
 			HWND hWnd = GetConsoleWindow();
 			ShowWindow( hWnd, SW_HIDE );
 			ShellExecute(NULL,TEXT("open"), TEXT("https://samaritanshope.org/"), TEXT(""),NULL,SW_HIDE);
-			break;
-			exit(0);
+			abort();
+			
 		}
 		else if(input1=="commands.list"){
 			HWND hWnd = GetConsoleWindow();
 			ShowWindow( hWnd, SW_HIDE );
 			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/wiki/Full-Command-List"), TEXT(""),NULL,SW_HIDE);
-			break;
-			exit(0);
+			abort();
+			
 		}
 		else if(input1=="undo.nedry.sabotage"){
 			cout<<"Ah ah ah! You didn't say the magic word!"<<endl;
@@ -281,78 +281,78 @@ int main(){
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow( hWnd, SW_HIDE );
 					ShellExecute(NULL,TEXT("open"), TEXT("https://google.com/"), TEXT(""),NULL,SW_HIDE);
-					break;
-					exit(0);
+					abort();
+					
 				}
 				else if(searchengineopeninput=="bing.open"){
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow( hWnd, SW_HIDE );
 					ShellExecute(NULL,TEXT("open"), TEXT("https://bing.com/"), TEXT(""),NULL,SW_HIDE);
-					break;
-					exit(0);
+					abort();
+					
 				}
 				else if(searchengineopeninput=="yahoo.open"){
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow( hWnd, SW_HIDE );
 					ShellExecute(NULL,TEXT("open"), TEXT("https://www.yahoo.com/"), TEXT(""),NULL,SW_HIDE);
-					break;
-					exit(0);
+					abort();
+					
 				}
 				else if(searchengineopeninput=="baidu.open"){
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow( hWnd, SW_HIDE );
 					ShellExecute(NULL,TEXT("open"), TEXT("https://www.baidu.com/"), TEXT(""),NULL,SW_HIDE);
-					break;
-					exit(0);
+					abort();
+					
 				}
 				else if(searchengineopeninput=="yandex.open"){
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow( hWnd, SW_HIDE );
 					ShellExecute(NULL,TEXT("open"), TEXT("https://yandex.ru/"), TEXT(""),NULL,SW_HIDE);
-					break;
-					exit(0);
+					abort();
+					
 				}
 				else if(searchengineopeninput=="duckduckgo.open"){
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow( hWnd, SW_HIDE );
 					ShellExecute(NULL,TEXT("open"), TEXT("https://duckduckgo.com/"), TEXT(""),NULL,SW_HIDE);
-					break;
-					exit(0);
+					abort();
+					
 				}
 				else if(searchengineopeninput=="askjeeves.open"){
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow( hWnd, SW_HIDE );
 					ShellExecute(NULL,TEXT("open"), TEXT("https://www.ask.com/"), TEXT(""),NULL,SW_HIDE);
-					break;
-					exit(0);
+					abort();
+					
 				}
 				else if(searchengineopeninput=="ask.open"){
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow( hWnd, SW_HIDE );
 					ShellExecute(NULL,TEXT("open"), TEXT("https://www.ask.com/"), TEXT(""),NULL,SW_HIDE);
-					break;
-					exit(0);
+					abort();
+					
 				}
 				else if(searchengineopeninput=="ecosia.open"){
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow( hWnd, SW_HIDE );
 					ShellExecute(NULL,TEXT("open"), TEXT("https://www.ecosia.org/"), TEXT(""),NULL,SW_HIDE);
-					break;
-					exit(0);
+					abort();
+					
 				}
 				else if(searchengineopeninput=="aol.open"){
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow( hWnd, SW_HIDE );
 					ShellExecute(NULL,TEXT("open"), TEXT("https://www.aol.com/"), TEXT(""),NULL,SW_HIDE);
-					break;
-					exit(0);
+					abort();
+					
 				}
 				else if(searchengineopeninput=="archiveorg.open"){
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow( hWnd, SW_HIDE );
 					ShellExecute(NULL,TEXT("open"), TEXT("https://archive.org/"), TEXT(""),NULL,SW_HIDE);
-					break;
-					exit(0);
+					abort();
+					
 				}
 			}
 		}
