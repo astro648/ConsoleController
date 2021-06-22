@@ -310,6 +310,18 @@ int main(){
 				}
 			}
 		}
+		else if(input1=="crash"){
+			abort();
+		}
+		else if(input1=="abort"){
+			abort();
+		}
+		else if(input1=="console.crash"){
+			abort();
+		}
+		else if(input1=="console.abort"){
+			abort();
+		}
 		else{
 			cout<<"The command you entered was not recognized. If you would like to, you can try again."<<endl;
 		}
