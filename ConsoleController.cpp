@@ -11,7 +11,7 @@
 #include <windows.h>
 using namespace std;
 int main(){
-	cout<<"ConsoleController v0.7.3 - Type in your command to get started."<<endl;
+	cout<<"ConsoleController v0.7.4 - Type in your command to get started."<<endl;
 	string input1;
 	string input1sub1;
 	string sysshutdownyn;
@@ -367,6 +367,46 @@ int main(){
 		}
 		else if(input1=="console.abort"){
 			abort();
+		}
+		else if(input1=="sys.restart.30s"){
+			cout<<"Are you sure you want to restart? [y/n]: ";
+			cin>>sysrestartyn;
+			if(sysrestartyn=="y"){
+				cout<<"Restarting in 30 seconds...";
+				system("C:\\Windows\\System32\\shutdown /r");
+    			return 0;
+    		}
+    		if(sysrestartyn=="Y"){
+				cout<<"Restarting in 30 seconds...";
+				system("C:\\Windows\\System32\\shutdown /r");
+    			return 0;
+    		}
+    		if(sysrestartyn=="n"){
+				cout<<"30s restart command aborted."<<endl;
+    		}
+    		if(sysrestartyn=="N"){
+				cout<<"30s restart command aborted."<<endl;
+    		}
+		}
+		else if(input1=="sys.restart.quick"){
+			cout<<"Are you sure you want to restart? [y/n]: ";
+			cin>>sysrestartyn;
+			if(sysrestartyn=="y"){
+				cout<<"Shutting down...";
+				system("C:\\Windows\\System32\\shutdown /r /t 0");
+    			return 0;
+    		}
+    		if(sysrestartyn=="y"){
+				cout<<"Shutting down...";
+				system("C:\\Windows\\System32\\shutdown /r /t 0");
+    			return 0;
+    		}
+    		if(sysrestartyn=="n"){
+				cout<<"Immediate shut-down command aborted."<<endl;
+    		}
+    		if(sysrestartyn=="N"){
+				cout<<"Immediate shut-down command aborted."<<endl;
+    		}
 		}
 		else{
 			cout<<"The command you entered was not recognized. If you would like to, you can try again."<<endl;
