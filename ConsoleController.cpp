@@ -18,6 +18,7 @@ int main(){
 	string sysrestartyn;
 	string websitelinkinput;
 	string searchengineopeninput;
+	string socialmediaopeninput;
 	for( ; ; ){
 		cout<<">> ";
 		cin>>input1;
@@ -407,6 +408,10 @@ int main(){
     		if(sysrestartyn=="N"){
 				cout<<"Immediate shut-down command aborted."<<endl;
     		}
+		}
+		else if(input1=="socialmedia.open"){
+			cout<<"socialmedia.open >> ";
+			cin>>socialmediaopeninput;
 		}
 		else{
 			cout<<"The command you entered was not recognized. If you would like to, you can try again."<<endl;
