@@ -11,7 +11,7 @@
 #include <windows.h>
 using namespace std;
 int main(){
-	cout<<"ConsoleController v0.7.4 - Type in your command to get started."<<endl;
+	cout<<"ConsoleController Usefulness Update Snapshot 21v02a - Type in your command to get started."<<endl;
 	string input1;
 	string input1sub1;
 	string sysshutdownyn;
@@ -19,6 +19,8 @@ int main(){
 	string websitelinkinput;
 	string searchengineopeninput;
 	string socialmediaopeninput;
+	string vidsocialmediaopeninput;
+	string formalsocialmediaopeninput;
 	for( ; ; ){
 		cout<<">> ";
 		cin>>input1;
@@ -412,6 +414,76 @@ int main(){
 		else if(input1=="socialmedia.open"){
 			cout<<"socialmedia.open >> ";
 			cin>>socialmediaopeninput;
+			if(socialmediaopeninput == "twtr"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://twitter.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(socialmediaopeninput == "reddit"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://www.reddit.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(socialmediaopeninput == "insta"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://www.instagram.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(socialmediaopeninput == "fb"){
+				//I extremely strongly dislike Facebook but if you use it then this is for you
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://www.facebook.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+		}
+		else if(input1=="video.socialmedia.open"){
+			cout<<"video.socialmedia.open >> ";
+			cin>>vidsocialmediaopeninput;
+			if(vidsocialmediaopeninput == "yt"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://youtube.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(vidsocialmediaopeninput == "vimeo"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://vimeo.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(vidsocialmediaopeninput == "tiktok"){
+				// WHYYYYY
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://www.tiktok.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+		}
+		else if(input1=="formal.socialmedia.open"){
+			cout<<"formal.socialmedia.open >> ";
+			cin>>formalsocialmediaopeninput;
+			if(formalsocialmediaopeninput == "slack"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://slack.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(formalsocialmediaopeninput == "gclass"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://classroom.google.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(formalsocialmediaopeninput == "mteams"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://www.microsoft.com/en-us/microsoft-teams/group-chat-software"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
 		}
 		else{
 			cout<<"The command you entered was not recognized. If you would like to, you can try again."<<endl;
