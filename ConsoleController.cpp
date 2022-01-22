@@ -11,7 +11,8 @@
 #include <windows.h>
 using namespace std;
 int main(){
-	cout<<"ConsoleController Usefulness Update Snapshot 21v02a - Type in your command to get started."<<endl;
+	cout<<"ConsoleController Usefulness Update Snapshot 22v01a - Type in your command to get started."<<endl;
+	cout<<"Type in \"console.help\" for help."<<endl;
 	string input1;
 	string input1sub1;
 	string sysshutdownyn;
@@ -409,6 +410,72 @@ int main(){
     		}
     		if(sysrestartyn=="N"){
 				cout<<"Immediate shut-down command aborted."<<endl;
+    		}
+		}
+		else if(input1=="sys.restart.custom-seconds-amount"){
+			cout<<"Are you sure you want to restart? [y/n]: ";
+			cin>>sysrestartyn;
+			if(sysrestartyn=="y"){
+				int sec, i;
+			    string strOne, strTwo;
+			    char str_One[50], str_Two[10];
+			    ostringstream intToStr;
+			    cout<<"Enter Number of Seconds to Restart: ";
+			    cin>>sec;
+			    intToStr<<sec;
+			    strOne = "C:\\Windows\\System32\\shutdown /r /t ";
+			    strTwo = intToStr.str();
+			    i=0;
+			    while(strOne[i])
+			    {
+			        str_One[i] = strOne[i];
+			        i++;
+			    }
+			    str_One[i] = '\0';
+			    i=0;
+			    while(strTwo[i])
+			    {
+			        str_Two[i] = strTwo[i];
+			        i++;
+			    }
+			    str_Two[i] = '\0';
+			    strcat(str_One, str_Two);
+			    system(str_One);
+			    return 0;
+    		}
+    		if(sysshutdownyn=="Y"){
+				int sec, i;
+			    string strOne, strTwo;
+			    char str_One[50], str_Two[10];
+			    ostringstream intToStr;
+			    cout<<"Enter Number of Seconds to Restart: ";
+			    cin>>sec;
+			    intToStr<<sec;
+			    strOne = "C:\\Windows\\System32\\shutdown /r /t ";
+			    strTwo = intToStr.str();
+			    i=0;
+			    while(strOne[i])
+			    {
+			        str_One[i] = strOne[i];
+			        i++;
+			    }
+			    str_One[i] = '\0';
+			    i=0;
+			    while(strTwo[i])
+			    {
+			        str_Two[i] = strTwo[i];
+			        i++;
+			    }
+			    str_Two[i] = '\0';
+			    strcat(str_One, str_Two);
+			    system(str_One);
+			    return 0;
+    		}
+    		if(sysshutdownyn=="n"){
+				cout<<"Custom time restart command aborted."<<endl;
+    		}
+    		if(sysshutdownyn=="N"){
+				cout<<"Custom time restart command aborted."<<endl;
     		}
 		}
 		else if(input1=="socialmedia.open"){
