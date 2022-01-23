@@ -11,7 +11,7 @@
 #include <windows.h>
 using namespace std;
 int main(){
-	cout<<"ConsoleController Usefulness Update Snapshot 22v01a - Type in your command to get started."<<endl;
+	cout<<"ConsoleController Usefulness Update Snapshot 22v02a - Type in your command to get started."<<endl;
 	cout<<"Type in \"console.help\" for help."<<endl;
 	cout<<"This is an experimental build, so everything may be subject to change."<<endl;
 	cout<<"Report any bugs to Github using the command \"github-repo.issues.open\"."<<endl;
