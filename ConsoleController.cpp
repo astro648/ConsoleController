@@ -191,7 +191,12 @@ int main(){
 			ShowWindow( hWnd, SW_HIDE );
 			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController"), TEXT(""),NULL,SW_HIDE);
 			abort();
-			
+		}
+		else if(input1=="github-repo.issues.open"){
+			HWND hWnd = GetConsoleWindow();
+			ShowWindow( hWnd, SW_HIDE );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/issues"), TEXT(""),NULL,SW_HIDE);
+			abort();
 		}
 		else if(input1=="chrome://dino"){
 			cout<<"Remember to do it in Chrome next time but here's something for you since you found an easter egg..."<<endl;
