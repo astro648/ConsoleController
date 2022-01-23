@@ -13,6 +13,8 @@ using namespace std;
 int main(){
 	cout<<"ConsoleController Usefulness Update Snapshot 22v01a - Type in your command to get started."<<endl;
 	cout<<"Type in \"console.help\" for help."<<endl;
+	cout<<"This is an experimental build, so everything may be subject to change."<<endl;
+	cout<<"Report any bugs to Github using the command \"github-repo.issues.open\"."<<endl;
 	string input1;
 	string input1sub1;
 	string sysshutdownyn;
@@ -500,7 +502,7 @@ int main(){
 				abort();
 			}
 			else if(socialmediaopeninput == "fb"){
-				//I extremely strongly dislike Facebook but if you use it then this is for you
+				//I strongly dislike Facebook but if you use it then this is for you
 				HWND hWnd = GetConsoleWindow();
 				ShowWindow( hWnd, SW_HIDE );
 				ShellExecute(NULL,TEXT("open"), TEXT("https://www.facebook.com/"), TEXT(""),NULL,SW_HIDE);
