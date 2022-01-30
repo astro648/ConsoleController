@@ -514,6 +514,18 @@ int main(){
 				abort();
 			}
 		}
+		else if(input1=="email.open"){
+			HWND hWnd = GetConsoleWindow();
+			ShowWindow( hWnd, SW_HIDE );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://mail.google.com/mail/u/0/"), TEXT(""),NULL,SW_HIDE);
+			abort();
+		}
+		else if(input1=="gmail.open"){
+			HWND hWnd = GetConsoleWindow();
+			ShowWindow( hWnd, SW_HIDE );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://mail.google.com/mail/u/0/"), TEXT(""),NULL,SW_HIDE);
+			abort();
+		}
 		else if(input1=="video.socialmedia.open"){
 			cout<<"video.socialmedia.open >> ";
 			cin>>vidsocialmediaopeninput;
