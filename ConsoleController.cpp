@@ -24,6 +24,7 @@ int main(){
 	string socialmediaopeninput;
 	string vidsocialmediaopeninput;
 	string formalsocialmediaopeninput;
+	string emailinput;
 	for( ; ; ){
 		cout<<">> ";
 		cin>>input1;
@@ -515,16 +516,8 @@ int main(){
 			}
 		}
 		else if(input1=="email.open"){
-			HWND hWnd = GetConsoleWindow();
-			ShowWindow( hWnd, SW_HIDE );
-			ShellExecute(NULL,TEXT("open"), TEXT("https://mail.google.com/mail/u/0/"), TEXT(""),NULL,SW_HIDE);
-			abort();
-		}
-		else if(input1=="gmail.open"){
-			HWND hWnd = GetConsoleWindow();
-			ShowWindow( hWnd, SW_HIDE );
-			ShellExecute(NULL,TEXT("open"), TEXT("https://mail.google.com/mail/u/0/"), TEXT(""),NULL,SW_HIDE);
-			abort();
+			cout<<"email.open >>";
+			cin>>emailinput;
 		}
 		else if(input1=="video.socialmedia.open"){
 			cout<<"video.socialmedia.open >> ";
