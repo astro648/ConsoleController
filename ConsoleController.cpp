@@ -518,6 +518,18 @@ int main(){
 		else if(input1=="email.open"){
 			cout<<"email.open >>";
 			cin>>emailinput;
+			if(emailinput == "proton"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://protonmail.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(emailinput == "protonmail"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://protonmail.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
 		}
 		else if(input1=="video.socialmedia.open"){
 			cout<<"video.socialmedia.open >> ";
