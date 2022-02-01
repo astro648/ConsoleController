@@ -536,6 +536,30 @@ int main(){
 				ShellExecute(NULL,TEXT("open"), TEXT("https://mail.google.com/mail/u/0/"), TEXT(""),NULL,SW_HIDE);
 				abort();
 			}
+			else if(emailinput == "outlook"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://outlook.live.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(emailinput == "yahoo"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://mail.yahoo.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(emailinput == "yahoomail"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://mail.yahoo.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(emailinput == "zoho"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://www.zoho.com/mail/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
 		}
 		else if(input1=="video.socialmedia.open"){
 			cout<<"video.socialmedia.open >> ";
