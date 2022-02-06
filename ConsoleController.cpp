@@ -24,6 +24,7 @@ int main(){
 	string socialmediaopeninput;
 	string vidsocialmediaopeninput;
 	string formalsocialmediaopeninput;
+	string emailinput;
 	for( ; ; ){
 		cout<<">> ";
 		cin>>input1;
@@ -515,16 +516,50 @@ int main(){
 			}
 		}
 		else if(input1=="email.open"){
-			HWND hWnd = GetConsoleWindow();
-			ShowWindow( hWnd, SW_HIDE );
-			ShellExecute(NULL,TEXT("open"), TEXT("https://mail.google.com/mail/u/0/"), TEXT(""),NULL,SW_HIDE);
-			abort();
-		}
-		else if(input1=="gmail.open"){
-			HWND hWnd = GetConsoleWindow();
-			ShowWindow( hWnd, SW_HIDE );
-			ShellExecute(NULL,TEXT("open"), TEXT("https://mail.google.com/mail/u/0/"), TEXT(""),NULL,SW_HIDE);
-			abort();
+			cout<<"email.open >>";
+			cin>>emailinput;
+			if(emailinput == "proton"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://protonmail.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(emailinput == "protonmail"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://protonmail.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(emailinput == "gmail"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://mail.google.com/mail/u/0/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(emailinput == "outlook"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://outlook.live.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(emailinput == "yahoo"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://mail.yahoo.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(emailinput == "yahoomail"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://mail.yahoo.com/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
+			else if(emailinput == "zoho"){
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow( hWnd, SW_HIDE );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://www.zoho.com/mail/"), TEXT(""),NULL,SW_HIDE);
+				abort();
+			}
 		}
 		else if(input1=="video.socialmedia.open"){
 			cout<<"video.socialmedia.open >> ";
