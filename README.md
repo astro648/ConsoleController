@@ -11,3 +11,7 @@ Yes, this is under very active development.
 The wiki (in the GitHub repository) has more info.
 ## What is the license?
 GPL-3.0
+## How often are snapshots released?
+Irregularly, sometimes a few in a day, sometimes every few days. Depends on when they are ready
+## Are there nightly builds?
+This is planned but not implemented yet
