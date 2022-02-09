@@ -189,15 +189,15 @@ int main(){
 		}
 		else if(input1=="github-repo.open"){
 			HWND hWnd = GetConsoleWindow();
-			ShowWindow( hWnd, SW_HIDE );
-			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController"), TEXT(""),NULL,SW_HIDE);
-			abort();
+			ShowWindow( hWnd, SW_SHOW );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController"), TEXT(""),NULL,SW_SHOW);
+			
 		}
 		else if(input1=="github-repo.issues.open"){
 			HWND hWnd = GetConsoleWindow();
-			ShowWindow( hWnd, SW_HIDE );
-			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/issues"), TEXT(""),NULL,SW_HIDE);
-			abort();
+			ShowWindow( hWnd, SW_SHOW );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/issues"), TEXT(""),NULL,SW_SHOW);
+			
 		}
 		else if(input1=="chrome://dino"){
 			cout<<"Remember to do it in Chrome next time but here's something for you since you found an easter egg..."<<endl;
@@ -223,55 +223,55 @@ int main(){
 		else if(input1=="github-repo.wiki.open"){
 			HWND hWnd = GetConsoleWindow();
 			ShowWindow( hWnd, SW_SHOW );
-			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/wiki"), TEXT(""),NULL,SW_HIDE);
+			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/wiki"), TEXT(""),NULL,SW_SHOW);
 		}
 		else if(input1=="github-repo.projects.open"){
 			HWND hWnd = GetConsoleWindow();
-			ShowWindow( hWnd, SW_HIDE );
-			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/projects"), TEXT(""),NULL,SW_HIDE);
-			abort();
+			ShowWindow( hWnd, SW_SHOW );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/projects"), TEXT(""),NULL,SW_SHOW);
+			
 			
 		}
 		else if(input1=="github-repo.issues.open"){
 			HWND hWnd = GetConsoleWindow();
-			ShowWindow( hWnd, SW_HIDE );
-			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/issues"), TEXT(""),NULL,SW_HIDE);
-			abort();
+			ShowWindow( hWnd, SW_SHOW );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/issues"), TEXT(""),NULL,SW_SHOW);
+			
 			
 		}
 		else if(input1=="console.help"){
 			HWND hWnd = GetConsoleWindow();
-			ShowWindow( hWnd, SW_HIDE );
-			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/wiki"), TEXT(""),NULL,SW_HIDE);
-			abort();
+			ShowWindow( hWnd, SW_SHOW );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/wiki"), TEXT(""),NULL,SW_SHOW);
+			
 			
 		}
 		else if(input1=="suicidal.help"){
 			HWND hWnd = GetConsoleWindow();
-			ShowWindow( hWnd, SW_HIDE );
-			ShellExecute(NULL,TEXT("open"), TEXT("https://samaritanshope.org/"), TEXT(""),NULL,SW_HIDE);
-			abort();
+			ShowWindow( hWnd, SW_SHOW );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://samaritanshope.org/"), TEXT(""),NULL,SW_SHOW);
+			
 			
 		}
 		else if(input1=="suicide.help"){
 			HWND hWnd = GetConsoleWindow();
-			ShowWindow( hWnd, SW_HIDE );
-			ShellExecute(NULL,TEXT("open"), TEXT("https://samaritanshope.org/"), TEXT(""),NULL,SW_HIDE);
-			abort();
+			ShowWindow( hWnd, SW_SHOW );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://samaritanshope.org/"), TEXT(""),NULL,SW_SHOW);
+			
 			
 		}
 		else if(input1=="suicidal-thoughts.help"){
 			HWND hWnd = GetConsoleWindow();
-			ShowWindow( hWnd, SW_HIDE );
-			ShellExecute(NULL,TEXT("open"), TEXT("https://samaritanshope.org/"), TEXT(""),NULL,SW_HIDE);
-			abort();
+			ShowWindow( hWnd, SW_SHOW );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://samaritanshope.org/"), TEXT(""),NULL,SW_SHOW);
+			
 			
 		}
 		else if(input1=="commands.list"){
 			HWND hWnd = GetConsoleWindow();
-			ShowWindow( hWnd, SW_HIDE );
-			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/wiki/Full-Command-List"), TEXT(""),NULL,SW_HIDE);
-			abort();
+			ShowWindow( hWnd, SW_SHOW );
+			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/wiki/Full-Command-List"), TEXT(""),NULL,SW_SHOW);
+			
 			
 		}
 		else if(input1=="undo.nedry.sabotage"){
@@ -289,79 +289,79 @@ int main(){
 			else{
 				if(searchengineopeninput=="google.open"){
 					HWND hWnd = GetConsoleWindow();
-					ShowWindow( hWnd, SW_HIDE );
-					ShellExecute(NULL,TEXT("open"), TEXT("https://google.com/"), TEXT(""),NULL,SW_HIDE);
-					abort();
+					ShowWindow( hWnd, SW_SHOW );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://google.com/"), TEXT(""),NULL,SW_SHOW);
+					
 					
 				}
 				else if(searchengineopeninput=="bing.open"){
 					HWND hWnd = GetConsoleWindow();
-					ShowWindow( hWnd, SW_HIDE );
-					ShellExecute(NULL,TEXT("open"), TEXT("https://bing.com/"), TEXT(""),NULL,SW_HIDE);
-					abort();
+					ShowWindow( hWnd, SW_SHOW );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://bing.com/"), TEXT(""),NULL,SW_SHOW);
+					
 					
 				}
 				else if(searchengineopeninput=="yahoo.open"){
 					HWND hWnd = GetConsoleWindow();
-					ShowWindow( hWnd, SW_HIDE );
-					ShellExecute(NULL,TEXT("open"), TEXT("https://www.yahoo.com/"), TEXT(""),NULL,SW_HIDE);
-					abort();
+					ShowWindow( hWnd, SW_SHOW );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://www.yahoo.com/"), TEXT(""),NULL,SW_SHOW);
+					
 					
 				}
 				else if(searchengineopeninput=="baidu.open"){
 					HWND hWnd = GetConsoleWindow();
-					ShowWindow( hWnd, SW_HIDE );
-					ShellExecute(NULL,TEXT("open"), TEXT("https://www.baidu.com/"), TEXT(""),NULL,SW_HIDE);
-					abort();
+					ShowWindow( hWnd, SW_SHOW );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://www.baidu.com/"), TEXT(""),NULL,SW_SHOW);
+					
 					
 				}
 				else if(searchengineopeninput=="yandex.open"){
 					HWND hWnd = GetConsoleWindow();
-					ShowWindow( hWnd, SW_HIDE );
-					ShellExecute(NULL,TEXT("open"), TEXT("https://yandex.ru/"), TEXT(""),NULL,SW_HIDE);
-					abort();
+					ShowWindow( hWnd, SW_SHOW );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://yandex.ru/"), TEXT(""),NULL,SW_SHOW);
+					
 					
 				}
 				else if(searchengineopeninput=="duckduckgo.open"){
 					HWND hWnd = GetConsoleWindow();
-					ShowWindow( hWnd, SW_HIDE );
-					ShellExecute(NULL,TEXT("open"), TEXT("https://duckduckgo.com/"), TEXT(""),NULL,SW_HIDE);
-					abort();
+					ShowWindow( hWnd, SW_SHOW );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://duckduckgo.com/"), TEXT(""),NULL,SW_SHOW);
+					
 					
 				}
 				else if(searchengineopeninput=="askjeeves.open"){
 					HWND hWnd = GetConsoleWindow();
-					ShowWindow( hWnd, SW_HIDE );
-					ShellExecute(NULL,TEXT("open"), TEXT("https://www.ask.com/"), TEXT(""),NULL,SW_HIDE);
-					abort();
+					ShowWindow( hWnd, SW_SHOW );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://www.ask.com/"), TEXT(""),NULL,SW_SHOW);
+					
 					
 				}
 				else if(searchengineopeninput=="ask.open"){
 					HWND hWnd = GetConsoleWindow();
-					ShowWindow( hWnd, SW_HIDE );
-					ShellExecute(NULL,TEXT("open"), TEXT("https://www.ask.com/"), TEXT(""),NULL,SW_HIDE);
-					abort();
+					ShowWindow( hWnd, SW_SHOW );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://www.ask.com/"), TEXT(""),NULL,SW_SHOW);
+					
 					
 				}
 				else if(searchengineopeninput=="ecosia.open"){
 					HWND hWnd = GetConsoleWindow();
-					ShowWindow( hWnd, SW_HIDE );
-					ShellExecute(NULL,TEXT("open"), TEXT("https://www.ecosia.org/"), TEXT(""),NULL,SW_HIDE);
-					abort();
+					ShowWindow( hWnd, SW_SHOW );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://www.ecosia.org/"), TEXT(""),NULL,SW_SHOW);
+					
 					
 				}
 				else if(searchengineopeninput=="aol.open"){
 					HWND hWnd = GetConsoleWindow();
-					ShowWindow( hWnd, SW_HIDE );
-					ShellExecute(NULL,TEXT("open"), TEXT("https://www.aol.com/"), TEXT(""),NULL,SW_HIDE);
-					abort();
+					ShowWindow( hWnd, SW_SHOW );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://www.aol.com/"), TEXT(""),NULL,SW_SHOW);
+					
 					
 				}
 				else if(searchengineopeninput=="archiveorg.open"){
 					HWND hWnd = GetConsoleWindow();
-					ShowWindow( hWnd, SW_HIDE );
-					ShellExecute(NULL,TEXT("open"), TEXT("https://archive.org/"), TEXT(""),NULL,SW_HIDE);
-					abort();
+					ShowWindow( hWnd, SW_SHOW );
+					ShellExecute(NULL,TEXT("open"), TEXT("https://archive.org/"), TEXT(""),NULL,SW_SHOW);
+					
 					
 				}
 			}
@@ -489,28 +489,28 @@ int main(){
 			cin>>socialmediaopeninput;
 			if(socialmediaopeninput == "twtr"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://twitter.com/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://twitter.com/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 			else if(socialmediaopeninput == "reddit"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://www.reddit.com/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://www.reddit.com/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 			else if(socialmediaopeninput == "insta"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://www.instagram.com/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://www.instagram.com/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 			else if(socialmediaopeninput == "fb"){
 				//I strongly dislike Facebook but if you use it then this is for you
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://www.facebook.com/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://www.facebook.com/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 		}
 		else if(input1=="email.open"){
@@ -518,45 +518,45 @@ int main(){
 			cin>>emailinput;
 			if(emailinput == "proton"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://protonmail.com/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://protonmail.com/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 			else if(emailinput == "protonmail"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://protonmail.com/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://protonmail.com/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 			else if(emailinput == "gmail"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://mail.google.com/mail/u/0/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://mail.google.com/mail/u/0/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 			else if(emailinput == "outlook"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://outlook.live.com/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://outlook.live.com/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 			else if(emailinput == "yahoo"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://mail.yahoo.com/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://mail.yahoo.com/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 			else if(emailinput == "yahoomail"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://mail.yahoo.com/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://mail.yahoo.com/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 			else if(emailinput == "zoho"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://www.zoho.com/mail/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://www.zoho.com/mail/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 		}
 		else if(input1=="video.socialmedia.open"){
@@ -564,22 +564,22 @@ int main(){
 			cin>>vidsocialmediaopeninput;
 			if(vidsocialmediaopeninput == "yt"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://youtube.com/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://youtube.com/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 			else if(vidsocialmediaopeninput == "vimeo"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://vimeo.com/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://vimeo.com/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 			else if(vidsocialmediaopeninput == "tiktok"){
 				// WHYYYYY
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://www.tiktok.com/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://www.tiktok.com/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 		}
 		else if(input1=="formal.socialmedia.open"){
@@ -587,21 +587,21 @@ int main(){
 			cin>>formalsocialmediaopeninput;
 			if(formalsocialmediaopeninput == "slack"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://slack.com/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://slack.com/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 			else if(formalsocialmediaopeninput == "gclass"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://classroom.google.com/"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://classroom.google.com/"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 			else if(formalsocialmediaopeninput == "mteams"){
 				HWND hWnd = GetConsoleWindow();
-				ShowWindow( hWnd, SW_HIDE );
-				ShellExecute(NULL,TEXT("open"), TEXT("https://www.microsoft.com/en-us/microsoft-teams/group-chat-software"), TEXT(""),NULL,SW_HIDE);
-				abort();
+				ShowWindow( hWnd, SW_SHOW );
+				ShellExecute(NULL,TEXT("open"), TEXT("https://www.microsoft.com/en-us/microsoft-teams/group-chat-software"), TEXT(""),NULL,SW_SHOW);
+				
 			}
 		}
 		else{
