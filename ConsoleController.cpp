@@ -11,7 +11,7 @@
 #include <windows.h>
 using namespace std;
 int main(){
-	cout<<"ConsoleController Usefulness Update Snapshot 22v03a - Type in your command to get started."<<endl;
+	cout<<"ConsoleController Usefulness Update Snapshot 22v04a - Type in your command to get started."<<endl;
 	cout<<"Type in \"console.help\" for help."<<endl;
 	cout<<"This is an experimental build, so everything may be subject to change."<<endl;
 	cout<<"Report any bugs to Github using the command \"github-repo.issues.open\"."<<endl;
@@ -222,10 +222,8 @@ int main(){
 		}
 		else if(input1=="github-repo.wiki.open"){
 			HWND hWnd = GetConsoleWindow();
-			ShowWindow( hWnd, SW_HIDE );
+			ShowWindow( hWnd, SW_SHOW );
 			ShellExecute(NULL,TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/wiki"), TEXT(""),NULL,SW_HIDE);
-			abort();
-			
 		}
 		else if(input1=="github-repo.projects.open"){
 			HWND hWnd = GetConsoleWindow();
