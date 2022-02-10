@@ -2,12 +2,12 @@ name: Test nightly build
 # Still trying to figure this out
 on:
   schedule:
-    - cron: '0 0 * * *' # run at 00:00 utc
+    - cron: '25 12 * * *' # test run for today
 
 jobs:
   build:
 
-    runs-on: windows-2019 # will be changed to 2022 after optimizations made
+    runs-on: windows-2019 # will be changed to 2022 after finished
 
     steps:
     - uses: actions/checkout@v2
