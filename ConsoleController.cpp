@@ -325,67 +325,80 @@ int main()
 			}
 			else
 			{
-				if (searchengineopeninput == "google.open")
+				if (searchengineopeninput == "google")
 				{
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow(hWnd, SW_SHOW);
 					ShellExecute(NULL, TEXT("open"), TEXT("https://google.com/"), TEXT(""), NULL, SW_SHOW);
 				}
-				else if (searchengineopeninput == "bing.open")
+				else if (searchengineopeninput == "bing")
 				{
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow(hWnd, SW_SHOW);
 					ShellExecute(NULL, TEXT("open"), TEXT("https://bing.com/"), TEXT(""), NULL, SW_SHOW);
 				}
-				else if (searchengineopeninput == "yahoo.open")
+				else if (searchengineopeninput == "yahoo")
 				{
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow(hWnd, SW_SHOW);
 					ShellExecute(NULL, TEXT("open"), TEXT("https://www.yahoo.com/"), TEXT(""), NULL, SW_SHOW);
 				}
-				else if (searchengineopeninput == "baidu.open")
+				else if (searchengineopeninput == "baidu")
 				{
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow(hWnd, SW_SHOW);
 					ShellExecute(NULL, TEXT("open"), TEXT("https://www.baidu.com/"), TEXT(""), NULL, SW_SHOW);
 				}
-				else if (searchengineopeninput == "yandex.open")
+				else if (searchengineopeninput == "yandex")
 				{
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow(hWnd, SW_SHOW);
 					ShellExecute(NULL, TEXT("open"), TEXT("https://yandex.ru/"), TEXT(""), NULL, SW_SHOW);
 				}
-				else if (searchengineopeninput == "duckduckgo.open")
+				else if (searchengineopeninput == "duckduckgo")
 				{
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow(hWnd, SW_SHOW);
 					ShellExecute(NULL, TEXT("open"), TEXT("https://duckduckgo.com/"), TEXT(""), NULL, SW_SHOW);
 				}
-				else if (searchengineopeninput == "askjeeves.open")
+				else if (searchengineopeninput == "askjeeves")
 				{
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow(hWnd, SW_SHOW);
 					ShellExecute(NULL, TEXT("open"), TEXT("https://www.ask.com/"), TEXT(""), NULL, SW_SHOW);
 				}
-				else if (searchengineopeninput == "ask.open")
+				else if (searchengineopeninput == "ask")
 				{
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow(hWnd, SW_SHOW);
 					ShellExecute(NULL, TEXT("open"), TEXT("https://www.ask.com/"), TEXT(""), NULL, SW_SHOW);
 				}
-				else if (searchengineopeninput == "ecosia.open")
+				else if (searchengineopeninput == "askcom")
+				{
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow(hWnd, SW_SHOW);
+					ShellExecute(NULL, TEXT("open"), TEXT("https://www.ask.com/"), TEXT(""), NULL, SW_SHOW);
+				}
+				else if (searchengineopeninput == "ecosia")
 				{
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow(hWnd, SW_SHOW);
 					ShellExecute(NULL, TEXT("open"), TEXT("https://www.ecosia.org/"), TEXT(""), NULL, SW_SHOW);
 				}
-				else if (searchengineopeninput == "aol.open")
+				else if (searchengineopeninput == "aol")
 				{
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow(hWnd, SW_SHOW);
 					ShellExecute(NULL, TEXT("open"), TEXT("https://www.aol.com/"), TEXT(""), NULL, SW_SHOW);
 				}
-				else if (searchengineopeninput == "archiveorg.open")
+				else if (searchengineopeninput == "archiveorg")
+				{
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow(hWnd, SW_SHOW);
+					ShellExecute(NULL, TEXT("open"), TEXT("https://archive.org/"), TEXT(""), NULL, SW_SHOW);
+				}
+				
+				else if (searchengineopeninput == "archive")
 				{
 					HWND hWnd = GetConsoleWindow();
 					ShowWindow(hWnd, SW_SHOW);
