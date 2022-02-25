@@ -546,7 +546,19 @@ int main()
 			}
 			else if (socialmediaopeninput == "fb")
 			{
-				//I strongly dislike Facebook but if you use it then this is for you
+				//I kind of dislike Facebook but if you use it then this is for you
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow(hWnd, SW_SHOW);
+				ShellExecute(NULL, TEXT("open"), TEXT("https://www.facebook.com/"), TEXT(""), NULL, SW_SHOW);
+			}
+			else if (socialmediaopeninput == "meta")
+			{
+				HWND hWnd = GetConsoleWindow();
+				ShowWindow(hWnd, SW_SHOW);
+				ShellExecute(NULL, TEXT("open"), TEXT("https://www.facebook.com/"), TEXT(""), NULL, SW_SHOW);
+			}
+			else if (socialmediaopeninput == "metafb")
+			{
 				HWND hWnd = GetConsoleWindow();
 				ShowWindow(hWnd, SW_SHOW);
 				ShellExecute(NULL, TEXT("open"), TEXT("https://www.facebook.com/"), TEXT(""), NULL, SW_SHOW);
