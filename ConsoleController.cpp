@@ -1,14 +1,14 @@
 #define _WIN32_WINNT 0x0500
 #pragma comment(linker, "/SUBSYSTEM:WINDOWS")
+#include <windows.h>
+#include <sstream>
+#include <ctime>
 #include <iostream>
 #include <fstream>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string>
 #include <string.h>
-#include <stdlib.h>
-#include <sstream>
-#include <ctime>
-#include <windows.h>
 using namespace std;
 int main()
 {
