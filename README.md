@@ -7,7 +7,7 @@ Go to Releases for the latest stable and experimental version
 ## Why is this useful?
 It will have different uses like shutdown/restart, making a to do list, chatrooms, browsing, and more.
 ## Where is the roadmap/development progress?
-Go to the wiki, it has all the information.
+Go to the wiki's page on this, it has all the information.
 ## Is data being collected?
 NO data is being collected from you by me at all if you use this software.
 ## Is this under active development?
