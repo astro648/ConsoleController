@@ -695,6 +695,12 @@ int main()
 				ShellExecute(NULL, TEXT("open"), TEXT("https://www.microsoft.com/en-us/microsoft-teams/group-chat-software"), TEXT(""), NULL, SW_SHOW);
 			}
 		}
+		else if (input1 == "roadmap")
+		{
+			HWND hWnd = GetConsoleWindow();
+			ShowWindow(hWnd, SW_SHOW);
+			ShellExecute(NULL, TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/projects"), TEXT(""), NULL, SW_SHOW);
+		}
 		else
 		{
 			cout << "The command you entered was not recognized. If you would like to, you can try again." << endl;
