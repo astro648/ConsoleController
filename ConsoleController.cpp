@@ -26,6 +26,7 @@ int main()
 	string vidsocialmediaopeninput;
 	string formalsocialmediaopeninput;
 	string emailinput;
+	string roadmapsub;
 	for (;;)
 	{
 		cout << ">> ";
@@ -700,6 +701,57 @@ int main()
 			HWND hWnd = GetConsoleWindow();
 			ShowWindow(hWnd, SW_SHOW);
 			ShellExecute(NULL, TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/projects"), TEXT(""), NULL, SW_SHOW);
+		}
+		else if (input1 == "roadmap.sub"){
+			cout << "[Type 'n' or 'N' without the quotation marks to cancel] search-engine.open >> ";
+			cin >> roadmapsub;
+			if (roadmapsub == "n")
+			{
+				cout << "Command canceled." << endl;
+			}
+			else if (roadmapsub == "N")
+			{
+				cout << "Command canceled." << endl;
+			}
+			else
+			{
+				if (roadmapsub == "1.1")
+				{
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow(hWnd, SW_SHOW);
+					ShellExecute(NULL, TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/projects/7"), TEXT(""), NULL, SW_SHOW);
+				}
+				else if (roadmapsub == "usefulnessupdate")
+				{
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow(hWnd, SW_SHOW);
+					ShellExecute(NULL, TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/projects/7"), TEXT(""), NULL, SW_SHOW);
+				}
+				else if (roadmapsub == "1.2")
+				{
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow(hWnd, SW_SHOW);
+					ShellExecute(NULL, TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/projects/8"), TEXT(""), NULL, SW_SHOW);
+				}
+				else if (roadmapsub == "technicallyupdated")
+				{
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow(hWnd, SW_SHOW);
+					ShellExecute(NULL, TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/projects/8"), TEXT(""), NULL, SW_SHOW);
+				}
+				else if (roadmapsub == "1.3")
+				{
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow(hWnd, SW_SHOW);
+					ShellExecute(NULL, TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/projects/9"), TEXT(""), NULL, SW_SHOW);
+				}
+				else if (roadmapsub == "bugsnjabber")
+				{
+					HWND hWnd = GetConsoleWindow();
+					ShowWindow(hWnd, SW_SHOW);
+					ShellExecute(NULL, TEXT("open"), TEXT("https://github.com/astronomerayaan/ConsoleController/projects/9"), TEXT(""), NULL, SW_SHOW);
+				}
+			}
 		}
 		else
 		{
